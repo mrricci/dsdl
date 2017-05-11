@@ -1,0 +1,21 @@
+# Flight Controller Status
+# Interval    10 Hz
+# 
+
+uint2 STATUS_STARTUP    = 0
+uint2 STATUS_DISARMED   = 1
+uint2 STATUS_ARMED      = 2
+uint2 STATUS_FAILED     = 3
+uint2 status
+
+uint4 MODE_GROUND       = 0
+uint4 MODE_HOVER        = 1
+uint4 MODE_FWD_FLIGHT   = 2
+uint4 mode          # Mode (0-15). (0 - Ground, 1 - hover, 2 - forward flight)
+
+bool    land_1_ack  # Land 1 acknoledgement
+bool    land_2_ack  # Land 2 acknoledgement (High Priority). Land immediately.
+uint16  time_to_land    # [sec] Time To Land (sec) & request to continue flight.
+uint16  avg_throttle    # [0.0015%/lsb]Average throttle Position (%). 0 = 0%, 65535 = 100%
+uint8   update_counter  # Update Counter
+uint8   unused

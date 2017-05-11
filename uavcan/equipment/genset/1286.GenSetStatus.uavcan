@@ -1,0 +1,22 @@
+# GenSet Status
+# Interval    10 Hz
+# 
+
+bool fault_level_1
+bool fault_level_2
+
+uint2 MODE_OFF         = 0
+uint2 MODE_GENSET_ONLY = 1
+uint2 MODE_BATT_ONLY   = 2
+uint2 MODE_HYBRID      = 3
+uint2 mode
+
+bool unused0
+bool unused1
+bool unused2
+bool unused3
+
+int8 unused4
+uint8 update_counter
+uint16 bus_voltage_mv           # [milivolts]
+uint16 ic_rpm                  # [rpm] engine speed

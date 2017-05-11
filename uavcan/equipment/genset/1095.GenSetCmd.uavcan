@@ -1,0 +1,10 @@
+# 
+# GenSet Command B
+# 
+
+uint16    pwm        # command to send for start/stop of genset
+int8      unused0
+int8      unused1
+int8      unused2
+int8      unused3
+int8      unused4

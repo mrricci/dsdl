@@ -1,0 +1,38 @@
+# Battery Pack Status & Faults    
+# Interval    10 Hz
+# 
+
+bool    land_1_low_priority        # Land 1 (Low Priority). Operate for TBD time.
+bool    land_2_high_priority        # Land 2 (High Priority). Land immediately.
+bool    cell_over_voltage_warning        # Cell Over Voltage - Warning
+bool    cell_over_voltage_critical        # Cell Over Voltage - Critical
+bool    cell_under_voltage_warning        # Cell Under Voltage - Warning
+bool    cell_under_voltage_critical        # Cell Under Voltage - Critical
+bool    eoc_monitor        # EOC Monitor
+bool    v_bus_read        # V-Bus Read
+bool    sum_of_cells        # Sum-of-cells
+bool    balance_out_of_range        # Balance out-of-range
+bool    loss_of_current_sensor        # Loss of Current Sensor
+bool    over_current_warning        # Over Current - Warning
+bool    over_current_critical        # Over Current - Critical
+bool    cant_charge        # Can't Charge
+bool    cell_over_temperature_warning        # Cell Over Temperature - Warning
+bool    cell_over_temperature_critical        # Cell Over Temperature - Critical
+bool    cell_under_temperature_warning        # Cell Under Temperature - Warning
+bool    cell_under_temperature_critical        # Cell Under Temperature - Critical
+bool    temperature_sensor_compare_fail_warning        # Temperature Sensor Compare Fail - Warning
+bool    temperature_sensor_compare_fail_critical        # Temperature Sensor Compare Fail - Critical
+bool    supply_voltage_out_of_range        # Supply Voltage out-of-range
+bool    logic_voltage_out_of_range        # Logic Voltage out-of-range
+bool    relay_failure_to_open        # Relay Failure to Open
+bool    relay_failure_to_close        # Relay Failure to Close
+bool    relay_status        # Relay Status (0 - close, 1 - open)
+bool    bq_communication_timeout        # BQ Communication Timeout
+bool    flight_controller_communication_timeout        # Flight Controller Communication Timeout
+bool    genset_communication_timeout        # GenSet Communication Timeout
+bool    unused0        # Unused
+bool    unused1        # Unused
+int8    unused2        # Unused
+uint8    unused3        # Unused
+uint8    update_counter        # Update Counter
+uint8    mode        # Mode
